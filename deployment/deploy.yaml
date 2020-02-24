@@ -5,8 +5,6 @@ metadata:
   labels:
     appname: hello1
 spec:
-  serviceAccount: tutorial-service
-  serviceAccountName: tutorial-service
   selector:
     matchLabels:
       appname: hello1
