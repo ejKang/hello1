@@ -5,6 +5,8 @@ metadata:
   labels:
     appname: hello1
 spec:
+  serviceAccount: tutorial-service
+  serviceAccountName: tutorial-service
   selector:
     matchLabels:
       appname: hello1
@@ -38,6 +40,8 @@ kind: Service
 metadata:
   name: svc-hello1
 spec:
+  serviceAccount: tutorial-service
+  serviceAccountName: tutorial-service
   type: NodePort
   selector:
     appname: hello1
